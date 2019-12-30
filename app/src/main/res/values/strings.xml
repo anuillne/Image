@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Image</string>
+    <string name="top_name">图象识别</string>
+    <string name="button_1">通用物体和场景识别</string>
+    <string name="button_2">植物识别</string>
+    <string name="button_3">动物识别</string>
+    <string name="button_4">关于</string>
+    <string name="camera_button">拍照</string>
+    <string name="takePicFrom_button">从相册获取</string>
+    <string name="about">基于Android的智能识别设计\n\n物联1704\n何思群\n孔伟豪\n李伟\n林国波\n毛德宇\n王韶文</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFAFA"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:orientation="vertical">
+                <TextView
+                        android:id="@+id/top_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="@string/top_name"
+                        android:textAlignment="center"
+                        android:textSize="62sp"
+                        >
+                </TextView>
+
+                <Button
+                        android:id="@+id/button_1"
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:text="@string/button_1"
+                        android:textSize="26sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:background="@drawable/button"
+                        android:onClick="buttonOne">
+                </Button>
+
+                <Button
+                        android:id="@+id/button_2"
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:text="@string/button_2"
+                        android:textSize="26sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:background="@drawable/button"
+                        android:onClick="buttonTwo">
+                </Button>
+
+                <Button
+                        android:id="@+id/button_3"
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:text="@string/button_3"
+                        android:textSize="26sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:background="@drawable/button"
+                        android:onClick="buttonThree">
+                </Button>
+
+                <Button
+                        android:id="@+id/button_4"
+                        android:layout_width="260dp"
+                        android:layout_height="100dp"
+                        android:text="@string/button_4"
+                        android:textSize="26sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:background="@drawable/button"
+                        android:onClick="buttonFour">
+                </Button>
+        </LinearLayout>
+
+</RelativeLayout>

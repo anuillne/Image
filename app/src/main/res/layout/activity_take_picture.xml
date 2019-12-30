@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFAFA"
+        android:orientation="vertical"
+        tools:context=".activity.TakePicture">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+        <Button
+                android:id="@+id/ButtonCamera"
+                android:layout_width="260dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/button"
+                android:text="@string/camera_button"
+                android:onClick="buttonCamera">
+        </Button>
+
+        <Button
+                android:id="@+id/ButtonTakePicFrom"
+                android:layout_width="260dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button"
+                android:text="@string/takePicFrom_button"
+                android:onClick="buttonTakePicFrom">
+        </Button>
+    </LinearLayout>
+</RelativeLayout>
