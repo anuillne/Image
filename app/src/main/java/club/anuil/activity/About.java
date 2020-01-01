@@ -6,6 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import club.anuil.R;
 
+/**
+ *
+ * 关于页activity
+ * 展示组员信息
+ * @author ANuiL
+ */
 public class About extends AppCompatActivity {
 
     @Override

@@ -7,7 +7,7 @@ import com.baidu.aip.imageclassify.AipImageClassify;
  *
  * @author： AnuilLne
  * @date： 2019/12/27 18:08
- * @description：
+ * @description： 设置一个百度识别的客户端
  */
 public class BaiduImgClient extends AipImageClassify{
 

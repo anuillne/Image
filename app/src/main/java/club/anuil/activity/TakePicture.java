@@ -23,7 +23,7 @@ import java.io.IOException;
 
 /**
  * @author ANuiL
- * @description 取得图像的窗口 拍照/从相册中获得
+ * @description 取得图像的窗口 拍照/从相册中获得 图片传给ImageMain
  */
 public class TakePicture extends AppCompatActivity {
 
@@ -57,7 +57,8 @@ public class TakePicture extends AppCompatActivity {
             //将处理结果设置为false
             ImageMain.resFlag=false;
             //已经有权限
-            toCamera();  //打开相机
+            // 打开相机
+            toCamera();
         }
 
     }
@@ -73,8 +74,7 @@ public class TakePicture extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
         super.onActivityResult(requestCode, resultCode, data);
-        File tempFile = null;
-        String res=null;
+        File tempFile;
         //判断返回码不等于0
         if (requestCode != RESULT_CANCELED) {
             //读取返回码
@@ -87,6 +87,7 @@ public class TakePicture extends AppCompatActivity {
                         SavePicUtil.savePic(Environment.getExternalStorageDirectory()+"/Image/","fileImg.jpeg",bitmap);
                         Intent intent=new Intent(TakePicture.this,ImgResult.class);
                         ImgResult.setImgBitmap(bitmap);
+                        //将图片的地址传给ImageMain 并设置百度百科的条数为 1 imageFlag为图片的处理方式
                         new ImageMain(
                             Environment.getExternalStorageDirectory()+"/Image/fileImg.jpeg",
                             MainActivity.imageFlag,
@@ -108,6 +109,7 @@ public class TakePicture extends AppCompatActivity {
                         Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(uri02));
                         Intent intent=new Intent(TakePicture.this,ImgResult.class);
                         ImgResult.setImgBitmap(bitmap);
+                        //将图片的地址传给ImageMain 并设置百度百科的条数为 1 imageFlag为图片的处理方式
                         new ImageMain(
                                 Environment.getExternalStorageDirectory()+"/Image/fileImg.jpeg",
                                 MainActivity.imageFlag,

@@ -1,0 +1,72 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="club.anuil"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml
+10    <!-- 添加权限 必须位于application前 -->
+11    <!-- 拍照 -->
+12    <uses-permission android:name="android.permission.CAMERA" /> <!-- 读写 -->
+12-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:7:5-64
+12-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:7:22-62
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:8:5-80
+13-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:8:22-78
+14    <uses-permission android:name="android.permission.PERMISSIONS_STORAGE" />
+14-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:9:5-77
+14-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:9:22-75
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:10:5-66
+15-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:10:22-64
+16
+17    <application
+17-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:12:5-33:19
+18        android:allowBackup="true"
+18-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:13:13-39
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.1.0] C:\Users\ANuiL\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:14:13-47
+22        android:label="@string/app_name"
+22-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:15:13-45
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:16:13-58
+24        android:supportsRtl="true"
+24-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:17:13-39
+25        android:theme="@style/AppTheme" >
+25-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:18:13-44
+26        <activity android:name="club.anuil.activity.About" >
+26-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:20:9-21:20
+26-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:20:19-49
+27        </activity>
+28        <activity android:name="club.anuil.activity.ImgResult" >
+28-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:22:9-23:20
+28-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:22:19-53
+29        </activity>
+30        <activity android:name="club.anuil.activity.TakePicture" >
+30-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:24:9-25:20
+30-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:24:19-55
+31        </activity>
+32        <activity android:name="club.anuil.MainActivity" >
+32-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:26:9-32:20
+32-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:26:19-47
+33            <intent-filter>
+33-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:27:13-31:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:28:17-68
+34-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:28:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:30:17-76
+36-->D:\code\idea\android\Image\app\src\main\AndroidManifest.xml:30:27-74
+37            </intent-filter>
+38        </activity>
+39    </application>
+40
+41</manifest>

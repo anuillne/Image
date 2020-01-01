@@ -15,12 +15,25 @@ import java.util.ArrayList;
  */
 public class JsonToRes {
 
+    /**
+     * @author： AnuilLne
+     * @date：   2020/1/1 16:41
+     * @param： jsonObject
+     * @return： java.lang.String
+     * @description：  通用物体识别 默认返回识别物体个数为5
+     */
     public static String generalImageRes(JSONObject jsonObject) throws JSONException {
+
+        //res 识别结果
         StringBuilder res=new StringBuilder();
         ArrayList<String> resArrrayTemp=new ArrayList<>();
+        //通用识别结果的root键 表示物体所属的上层
         String root;
+        //keyword键 表示识别的结果
         String keyword;
+        //相关结果描述
         String description;
+        //通用识别有个数 默认为5个 不支持改变
         int result_num;
 
         //解析Json
@@ -47,17 +60,22 @@ public class JsonToRes {
             //添加到结果数组中
             resArrrayTemp.add(resTemp.toString());
         }
-
+        //构造图像的识别结果字符串
         res.append("识别物体个数：").append(resArrrayTemp.size()).append("\n\n");
-        for (int i=0;i<resArrrayTemp.size();i++){
-            res.append(resArrrayTemp.get(i));
+        for (String s : resArrrayTemp) {
+            res.append(s);
             res.append("\n\n");
         }
-        System.out.println(res.toString());
-
         return res.toString();
     }
 
+    /**
+     * @author： AnuilLne
+     * @date：   2020/1/1 16:42
+     * @param： jsonObject
+     * @return： java.lang.String
+     * @description： 动植物识别 默认返回识别物体个数为5
+     */
     public static String animalAndPlantImageRes(JSONObject jsonObject) throws JSONException{
         StringBuilder resTemp=new StringBuilder();
         String name;
@@ -73,7 +91,6 @@ public class JsonToRes {
                 resTemp.append("描述：").append(description).append("\n");
             }
         }
-        System.out.println(resTemp.toString());
 
         return resTemp.toString();
     }

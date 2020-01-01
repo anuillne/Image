@@ -23,6 +23,7 @@ import java.util.concurrent.TimeUnit;
 public class MainActivity extends Activity {
 
     /**
+    * imageFlag 图片的识别处理方式
     * 1 通用图像识别
     * 2 植物识别
     * 3 动物识别

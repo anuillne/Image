@@ -11,9 +11,15 @@ import club.anuil.R;
 import club.anuil.server.ImageMain;
 
 /**
+ * 展示图片的识别结果
  * @author ANuiL
  */
 public class ImgResult extends AppCompatActivity {
+    /**
+     * @author： AnuilLne
+     * imgBitmap 需要展示的图片Bitmap
+     * result 图片的识别结果
+     */
     private ImageView imageView;
     private TextView textView;
     private static Bitmap imgBitmap;
@@ -50,11 +56,18 @@ public class ImgResult extends AppCompatActivity {
         textView.setText(result);
     }
 
+    /**
+     * @author： AnuilLne
+     * @date：   2020/1/1 16:05
+     * @param：
+     * @return： void
+     * @description： 创建子线程 从ImageMain类中获取识别结果 并更新UI
+     */
     private void upDataUi(){
         Runnable runnable=new Runnable() {
             @Override
             public void run() {
-                //创建子线程获取信息
+                //创建子线程获取图片识别结果
                 do {
                     setResult(ImageMain.res);
                 }while (!ImageMain.resFlag);
@@ -67,6 +80,7 @@ public class ImgResult extends AppCompatActivity {
                 });
             }
         };
+        //加入到线程池
         MainActivity.threadPoolExecutor.execute(runnable);
     }
 }

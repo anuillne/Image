@@ -11,7 +11,7 @@ import java.io.IOException;
  *
  * @author： AnuilLne
  * @date： 2019/12/27 16:26
- * @description：压缩图片
+ * @description： 压缩图片 并将图片存储在指定位置
  */
 public class SavePicUtil {
     public static Boolean savePic(String newPath,String fileName, Bitmap bitmap) throws Exception{
