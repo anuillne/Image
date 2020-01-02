@@ -14,7 +14,7 @@ import java.io.IOException;
  * @description： 压缩图片 并将图片存储在指定位置
  */
 public class SavePicUtil {
-    public static Boolean savePic(String newPath,String fileName, Bitmap bitmap) throws Exception{
+    public static void savePic(String newPath,String fileName, Bitmap bitmap) throws Exception{
 
         File file=new File(newPath);
         File image=new File(newPath+fileName);
@@ -34,6 +34,5 @@ public class SavePicUtil {
             e.printStackTrace();
         }
 
-        return null;
     }
 }
