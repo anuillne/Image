@@ -1,4 +1,4 @@
-#Mon Dec 30 12:20:50 CST 2019
+#Thu Jan 02 23:06:58 CST 2020
 base.0=D\:\\code\\idea\\android\\Image\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

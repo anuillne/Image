@@ -1,9 +1,13 @@
 package club.anuil.activity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.text.method.ScrollingMovementMethod;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import club.anuil.MainActivity;
@@ -43,7 +47,6 @@ public class ImgResult extends AppCompatActivity {
         ImgResult.imgBitmap = imgBitmap;
     }
 
-
     public static void setResult(String result) {
         ImgResult.result = result;
     }
@@ -54,6 +57,36 @@ public class ImgResult extends AppCompatActivity {
 
     private void showText(){
         textView.setText(result);
+    }
+
+
+    /**
+     * @author： AnuilLne
+     * @date：   2020/1/2 22:40
+     * @param： view
+     * @return： void
+     * @description： 添加用户对图像识别结果的满意度 弹出框
+     */
+    public void feedBack(View view){
+        AlertDialog alertDialog2 = new AlertDialog.Builder(this)
+                .setTitle("偷偷告诉我：")
+                .setMessage("对识别结果是否满意？")
+                .setIcon(R.mipmap.ic_launcher)
+                .setPositiveButton("是", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(ImgResult.this, "感谢您对识别结果的反馈！", Toast.LENGTH_SHORT).show();
+                    }
+                })
+
+                .setNegativeButton("否", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(ImgResult.this, "感谢您对识别结果的反馈", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .create();
+        alertDialog2.show();
     }
 
     /**
@@ -83,4 +116,5 @@ public class ImgResult extends AppCompatActivity {
         //加入到线程池
         MainActivity.threadPoolExecutor.execute(runnable);
     }
+
 }

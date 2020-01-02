@@ -8,4 +8,5 @@
     <string name="camera_button">拍照</string>
     <string name="takePicFrom_button">从相册获取</string>
     <string name="about">基于Android的智能识别设计\n\n物联1704\n何思群\n孔伟豪\n李伟\n林国波\n毛德宇\n王韶文</string>
+    <string name="feedBack">反馈</string>
 </resources>

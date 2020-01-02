@@ -410,6 +410,7 @@
     <string name="button_3">动物识别</string>
     <string name="button_4">关于</string>
     <string name="camera_button">拍照</string>
+    <string name="feedBack">反馈</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="takePicFrom_button">从相册获取</string>

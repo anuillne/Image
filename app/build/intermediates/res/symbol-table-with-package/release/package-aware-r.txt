@@ -771,6 +771,7 @@ id edit_query
 id end
 id expand_activities_button
 id expanded_menu
+id feedBackResult
 id forever
 id gone
 id group_divider
@@ -959,6 +960,7 @@ string button_2
 string button_3
 string button_4
 string camera_button
+string feedBack
 string search_menu_title
 string status_bar_notification_info_overflow
 string takePicFrom_button
